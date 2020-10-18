@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Point and click</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="#">
+
+    <audio id="pointsound">
+        <source src="effect1.wav" type="audio/mpeg"></audio>
+</head>
+
+<body>
+    <div id="intro" class="modal">
+        <h1>Welcome to our point and click game.</h1> 
+
+        <p> In this game we will show you how to save energy in your house by giving you few everyday tasks to
+            accomplish.
+        </p>
+        <p>You have 10 seconds to solve 3 tasks listed on the left.</p>
+        <br>
+        <button id="startgame"> Start the game!
+
+        </button>
+    </div>
+
+    <div id="win" class="modal">
+        <h1>Congratulations!</h1>
+        <p> You have managed to solve all the tasks! Click the button if you want to play again.
+        </p>
+        <button class="reset"> Play again!
+
+        </button>
+    </div>
+
+    <div id="lose" class="modal">
+        <h1>You ran out of time!</h1>
+        <button class="reset">Restart the game!</button>
+    </div>
+    <svg id="the_svg" width="1920px" height="1080px" xmlns="http:www.w3.org/2000/svg"
+        xmlns:xlink="http:www.w3.org/1999/xlink">
+    </svg>
+    <div id="tasks">
+        <p>Tasks:</p>
+        <ul id="tasklist">
+            <li id="listsink">Turn off the sink in the bathroom</li>
+            <li id="listlamps">Turn off the lamps in the bedroom</li>
+            <li id="listtv">Turn off the TV in the living room</li>
+
+        </ul>
+    </div>
+
+    <div id="counter">Remaning time: <span>10 </span> s</div>
+    <div id="pointcounter">Points: <span>0 </span> </div>
+
+</body>
+<script src="script.js"></script>
+
+</html>
